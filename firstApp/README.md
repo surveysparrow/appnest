@@ -4,7 +4,7 @@ Create a first simple app to understand structure.
 -Use 'fdk run' to execute this app
 -Open your freshdesk ticket as shown in example url https://subdomain.freshdesk.com/helpdesk/tickets/1?dev=true
 -You can see ur app in right sidebar as we have given ticket_sidebar in manifest.json file.
-
+![](https://github.com/AyeshaKulsum/freshworksApps/blob/master/pictures/first.PNG)
 ### Folder structure explained
 
     .
