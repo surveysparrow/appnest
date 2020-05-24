@@ -1,4 +1,4 @@
-# freshworksApps
+# Freshworks Apps
 # Created with the help of Freshworks Upskill Program co<div/>
 Firstly, we need freshdesk trial account to run this apps https://developers.freshdesk.com/
 and just few commands to setup this environment in our local machine.
