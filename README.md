@@ -14,5 +14,7 @@ and run this npm install https://dl.freshdev.io/cli/fdk-6.3.2.tgz -g in our term
 # Level 1 is to Create a simple app 
 - This app used to creates a ticket in Freshdesk based on user input
 
-# Level 1 is to Create a simple app that configures with github OAuth.
+# Level 2 is to Create a simple app that configures with github OAuth.
 - This app configures with github to create and view issues
+
+# Level 3 is to Create a simple serverless app that configures with github OAuth.
