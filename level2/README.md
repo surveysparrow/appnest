@@ -1,20 +1,20 @@
-## Your First App
+## Create a simple app that configures with github OAuth.
 
-Congratulations on creating your first app! Feel free to replace this text with your app's actual description.
-This training app enables a simple integration between Freshdesk and Github. You can create a ticket from Freshdesk and view it.
+- Use 'fdk run' to execute this app
+- Provide client_id and client_secret in oauth_config.json file
+- Provide github repository in this url http://localhost:10001/custom_configs and click install
+- Open your freshdesk ticket as shown in example url https://subdomain.freshdesk.com/helpdesk/tickets/1?dev=true
+- You can see ur app in right sidebar as we have given ticket_sidebar in manifest.json file.
 
-#### Creation of Issue 
+#### Creation of Issue
+
 - Using Request API
 - OAuth
 - Notifications API
 
-![](/app/resources/img/1.gif)
-
 #### Prevention of Duplicate Issue Creation
+
 - Using data storage APIs
 - Modals
 
-![](/app/resources/img/2.gif)
-
 #### View the issue in Github
-![](/app/resources/img/3.gif)
