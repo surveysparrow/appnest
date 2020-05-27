@@ -11,10 +11,11 @@
 - Using Request API
 - OAuth
 - Notifications API
-
+![](https://github.com/AyeshaKulsum/freshworksApps/blob/master/pictures/issues.PNG)
 #### Prevention of Duplicate Issue Creation
 
 - Using data storage APIs
 - Modals
 
 #### View the issue in Github
+![](https://github.com/AyeshaKulsum/freshworksApps/blob/master/pictures/view.PNG)
