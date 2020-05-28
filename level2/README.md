@@ -19,3 +19,6 @@
 
 #### View the issue in Github
 ![](https://github.com/AyeshaKulsum/freshworksApps/blob/master/pictures/view.PNG)
+
+### When no issues created in github
+![](https://github.com/AyeshaKulsum/freshworksApps/blob/master/pictures/noissues.PNG)
