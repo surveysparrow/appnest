@@ -18,3 +18,4 @@ and run this npm install https://dl.freshdev.io/cli/fdk-6.3.2.tgz -g in our term
 - This app configures with github to create and view issues
 
 # Level 3 is to Create a simple serverless app that configures with github OAuth.
+- This app creates issue whenever ticket is created and if we close issue from github that ticket in github will also be closed.
