@@ -1,0 +1,17 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [],
+  "engines": {
+    "node": "18.16.0",
+    "ssdk": "0.1.0"
+  }
+}
