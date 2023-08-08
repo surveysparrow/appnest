@@ -9,7 +9,7 @@
       }
     }
   },
-  "whitelisted-domains": [],
+  "whitelisted-domains": ["https://api.surveysparrow.com","https://twitter.com"],
   "engines": {
     "node": "18.16.0",
     "ssdk": "0.1.0"
