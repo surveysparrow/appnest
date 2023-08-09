@@ -2,6 +2,12 @@
   "platform-version": "1.0",
   "product": {
     "surveysparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "images/icon.svg"
+        }
+      },
       "events": {
         "onScheduledEvent": {
           "handler": "onScheduledEvent"

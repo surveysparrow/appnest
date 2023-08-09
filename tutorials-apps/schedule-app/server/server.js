@@ -26,9 +26,9 @@ const createSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.create({
-      name: args.payload.name,
-      data: args.payload.data,
-      schedule_at: args.payload.schedule_at
+      name: args.data.name,
+      data: args.data.data,
+      schedule_at: args.data.schedule_at
     });
     console.log(data);
   } catch (error) {
@@ -41,7 +41,7 @@ const fetchSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.fetch({
-      name: args.name
+      name: args.data.name
     });
     console.log(data);
   } catch (error) {
@@ -54,9 +54,9 @@ const updateSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.update({
-      name: args.name,
-      data: args.data,
-      schedule_at: args.schedule_at
+      name: args.data.name,
+      data: args.data.data,
+      schedule_at: args.data.schedule_at
     });
     console.log(data);
   } catch (error) {
@@ -69,7 +69,7 @@ const deleteSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.delete({
-      name: args.payload.name
+      name: args.data.name
     });
     console.log(data);
   } catch (error) {
@@ -82,7 +82,7 @@ const pauseSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.pause({
-      name: args.payload.name
+      name: args.data.name
     });
     console.log(data);
   } catch (error) {
@@ -95,7 +95,7 @@ const resumeSchedule = async (args) => {
   console.log('args', args);
   try {
     const data = await $Schedule.resume({
-      name: args.payload.name
+      name: args.data.name
     });
     console.log(data);
   } catch (error) {
