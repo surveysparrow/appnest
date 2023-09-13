@@ -1,0 +1,7 @@
+{
+    "client_id" : "Your-hubspot-client_id",
+    "client_secret" :   "Your-hubspot-client_secret",
+    "authorize_url":    "https://app.hubspot.com/oauth/authorize",
+    "token_url":    "https://api.hubapi.com/oauth/v1/token",
+    "options":  {"scope":["crm.lists.read","cms.domains.read","account-info.security.read"]}
+}

@@ -1,0 +1,23 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": ["https://api.surveysparrow.com/v3/surveys", "https://slack.com/api/chat.postMessage"],
+  "engines": {
+    "node": "18.16.0",
+    "ssdk": "0.1.5"
+  }
+}

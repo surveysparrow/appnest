@@ -1,0 +1,7 @@
+{
+    "client_id" : "Your-google-contacts-app-client_id",
+    "client_secret" :   "Your-google-contacts-app-client_secret",
+    "authorize_url":    "https://accounts.google.com/o/oauth2/auth",
+    "token_url":    "https://oauth2.googleapis.com/token",
+    "options":  {"response_type":"code","access_type":"offline","prompt":"consent","scope":["https://www.googleapis.com/auth/contacts"]}
+}

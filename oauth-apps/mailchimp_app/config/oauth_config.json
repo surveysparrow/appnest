@@ -1,0 +1,7 @@
+{
+    "client_id" : "Your-mailchimp-client_id",
+    "client_secret" :   "Your-mailchimp-client_secret",
+    "authorize_url":    "https://login.mailchimp.com/oauth2/authorize",
+    "token_url":    "https://login.mailchimp.com/oauth2/token",
+    "options":  {"response_type":"code","client_id":"Your-mailchimp-client_id", "redirect_uri":"changes with ssdk and production(refer documnetation)"}
+}
