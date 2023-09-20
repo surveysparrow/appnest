@@ -11,15 +11,14 @@ async function renderText() {
   textElement.innerHTML = `Welcome, Create your simple app here`;
 
   try{
-  const resp = await client.request.get(`https://api.notion.com/v1/users`, {
+  const response = await client.request.get(`https://api.hubapi.com/cos-domains/v1/domains`, {
     options: {
       headers: {
         Authorization: "Bearer <%=access_token%>",
-        "Notion-Version": "2022-06-28",
       }, isOAuth: true
     }
   });
-  console.log(JSON.stringify(resp));
+  console.log("Response from hubspot",JSON.stringify(response));
 
 }catch(error){
   console.log(error);

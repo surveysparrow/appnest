@@ -11,14 +11,14 @@ async function renderText() {
   textElement.innerHTML = `Welcome, Create your simple app here`;
 
   try{
-  const resp = await client.request.get(`https://api.hubapi.com/cos-domains/v1/domains`, {
+  const response = await client.request.get(`https://us21.api.mailchimp.com/3.0/campaigns`, {
     options: {
       headers: {
         Authorization: "Bearer <%=access_token%>",
       }, isOAuth: true
     }
   });
-  console.log(JSON.stringify(resp));
+  console.log("Response from mailChimp", JSON.stringify(response));
 
 }catch(error){
   console.log(error);

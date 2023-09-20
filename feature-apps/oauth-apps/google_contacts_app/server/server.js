@@ -9,9 +9,9 @@ exports = {
     }
   },
 };
-async function createGoogleContact(args, reqData) {
+async function createGoogleContact(args, reqData) { //Function for sending data to google via its public API
   try {
-    const res = await $Fetch.post(
+    const responseFromGoogle = await $Fetch.post(
       "https://people.googleapis.com/v1/people:createContact",
       {
         names: [
@@ -39,10 +39,9 @@ async function createGoogleContact(args, reqData) {
       },
       reqData
     );
-    console.log(res);
-    console.log("Contact Created in onContactCreate");
+    console.log("Contact Created in onContactCreate", responseFromGoogle);
   } catch (error) {
     console.log("error while sending to google");
-    console.log(error);
+    throw error;
   }
 }
