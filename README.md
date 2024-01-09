@@ -225,6 +225,15 @@ There are practically three different ways to build applications on the AppNest 
    
    *Example:* An app that allows users to schedule a task that migrates all the contacts from a remote SFTP server to SurveySparrow’s contacts on a specific date every week or every month.
 
+2. **Serverless Apps:**
+   Dive into the future of application development with serverless apps. These applications harness the power of serverless events, allowing them to execute specific tasks whenever a predefined event takes place.
+   
+   *Example: Automatically create a Google contact every time a new contact gets created on the SurveySparrow account.*
+
+3. **Scheduler Apps:**
+   Streamline your app's functionality by focusing on scheduling. Whether it's a one-time event or a recurring task, Scheduler Apps are designed to effortlessly manage and execute scheduled events.
+   *Example: An app that allows users to schedule a task that migrates all the contacts from a remote SFTP server to SurveySparrow’s contacts on a specific date every week or every month.*
+
 </br>
 
 ## Contributing
@@ -250,6 +259,6 @@ AppNest Marketplace is licensed under the MIT License.
 
 ## Contact
 
-For inquiries and support, please contact us at [developer.support@surveysparrow.com](mailto:developer.support@surveysparrow.com) or join our [developer community](https://community.surveysparrow.com/).
+For inquiries and support, please contact us at [support@surveysparrow.dev](mailto:support@surveysparrow.dev) or join our [developer community](https://community.surveysparrow.com/).
 
 We look forward to seeing the innovative ways you enhance SurveySparrow experience with our versatile marketplace.
