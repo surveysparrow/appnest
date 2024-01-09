@@ -3,7 +3,7 @@
   "product": {
     "surveysparrow": {
       "location": {
-        "new_survey_modal": {
+        "full_page_app": {
           "url": "index.html",
           "icon": "styles/images/icon.svg"
         }
