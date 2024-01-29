@@ -244,6 +244,6 @@ AppNest Marketplace is licensed under the MIT License.
 
 ## Contact
 
-For inquiries and support, please contact us at [developer.support@surveysparrow.com](mailto:developer.support@surveysparrow.com) or join our [developer community](https://community.surveysparrow.com/).
+For inquiries and support, please contact us at [support@surveysparrow.dev](mailto:support@surveysparrow.dev) or join our [developer community](https://community.surveysparrow.com/).
 
 We look forward to seeing the innovative ways you enhance SurveySparrow experience with our versatile marketplace.

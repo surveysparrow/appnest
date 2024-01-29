@@ -1,6 +1,6 @@
 ## Your First App
 
-This app displays the sample SurveySparrow new_survey_modal placeholder
+This app displays the sample SurveySparrow full_page_app placeholder
 
 ### Files and Folders
     .
