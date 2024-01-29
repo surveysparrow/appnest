@@ -1,0 +1,17 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "events": {
+        "onContactCreate": {
+          "handler": "onContactCreate"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": ["https://people.googleapis.com/v1/people:createContact"],
+  "engines": {
+    "node": "18.16.0",
+    "ssdk": "1.3.0"
+  }
+}

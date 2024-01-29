@@ -1,0 +1,7 @@
+{
+    "client_id" : "Your-slack-app-client_id",
+    "client_secret" :   "Your-slack-app-client_secret",
+    "authorize_url":    "https://slack.com/oauth/v2/authorize",
+    "token_url":    "https://slack.com/api/oauth.v2.access",
+    "options":  {"provider":"slack","response_type":"token","access_type":"offline","prompt":"consent", "scope":["channels:read","groups:read","chat:write","im:write","chat:write.customize","chat:write.public","im:history"]}
+    }

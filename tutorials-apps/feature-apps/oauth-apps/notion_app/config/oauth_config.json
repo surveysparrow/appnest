@@ -1,0 +1,14 @@
+{
+    "client_id": "your-notion-client_id",
+    "client_secret": "your-notion-client_secret",
+    "authorize_url": "https://api.notion.com/v1/oauth/authorize",
+    "token_url": "https://api.notion.com/v1/oauth/token",
+    "options": {
+        "response_type": "code",
+        "owner": "user",
+        "customHeaders": {
+            "Authorization": "Basic {Buffer.from(`${clientId}:${clientSecret}`).toString('base64')}"
+        },
+        "redirect_url": "https://localhost:30001/auth/callback"
+    }
+}
