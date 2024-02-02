@@ -5,17 +5,17 @@
       "location": {
         "full_page_app": {
           "url": "index.html",
-          "icon": "styles/images/icon.svg"
+          "icon": "icon.svg"
         }
       }
     }
   },
   "whitelisted-domains": [
-    "https://api.surveysparrow.com/v3/questions",
-    "https://api.surveysparrow.com/v3/surveys"
+     "https://(.*).surveysparrow.com(.*)",
+     "https://api.openai.com/v1/chat/completions"
   ],
   "engines": {
     "node": "18.19.0",
-    "ssdk": "0.1.9"
+    "ssdk": "0.1.7"
   }
 }

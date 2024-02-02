@@ -1,0 +1,11 @@
+.DS_Store
+.ssdk/
+coverage/
+.report.json
+.vscode/
+node_modules/
+dist/
+config/oauth_config.json
+config/iparam_test_data.json
+log/
+logo.svg

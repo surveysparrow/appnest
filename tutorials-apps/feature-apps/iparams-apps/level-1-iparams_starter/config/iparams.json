@@ -1,0 +1,47 @@
+{
+  "surveysparrow_api_key": {
+      "display_name": "SurveySparrow API Key",
+      "description": "Please enter your SurveySparrow API key. You can find it in Settings -> Apps & Integrations -> Custom Apps",
+      "required": true,
+      "secure": true,
+      "type": "api_key",
+      "type_attributes": {
+        "product": "surveysparrow"
+      }
+    }
+  ,
+  "name": {
+    "display_name": "Name",
+    "description": "Please enter your Name here",
+    "type": "text",
+    "required": false
+  },
+
+  "phone_number":{
+    "display_name": "Phone Number",
+    "description": "Please enter your Phone Number here",
+    "type": "text",
+    "required": true
+  },
+
+   "date":{
+    "display_name": "Date",
+    "description": "Please enter your DOB here",
+    "type": "date",
+    "required": false
+  },
+
+   "email":{
+    "display_name": "Email",
+    "description": "Please enter your Email here",
+    "type": "date",
+    "required": false
+  },
+
+   "identification_url":{
+    "display_name": "Identification URL",
+    "description": "Please enter your Identification URL here. It can either be a personal website or business website that you are associated with",
+    "type": "url",
+    "required": true
+  }
+}

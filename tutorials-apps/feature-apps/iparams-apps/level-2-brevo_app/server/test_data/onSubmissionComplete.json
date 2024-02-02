@@ -1,0 +1,85 @@
+{
+  "eventType": "onSubmissionComplete",
+  "ruleEvent": "SUBMISSION_COMPLETED",
+  "objectType": "SUBMISSION",
+  "data": {
+    "id": 1001001581,
+    "time_taken": "6.00",
+    "state": "COMPLETED",
+    "start_time": "2023-12-01T11:16:23.007Z",
+    "completed_time": "2023-12-01T11:16:29.007Z",
+    "device_type": "COMPUTER",
+    "feedback": null,
+    "ip": null,
+    "location": null,
+    "language": "en",
+    "geo_info": {},
+    "created_at": "2023-12-01T11:16:28.935Z",
+    "updated_at": "2023-12-01T11:16:29.007Z",
+    "account_id": 12,
+    "nomination_id": null,
+    "survey_id": 1001000164,
+    "survey": {
+      "id": 1001000164,
+      "survey_type": "ClassicForm",
+      "name": "Employee Experience Survey"
+    },
+    "folder": {
+      "id": 12,
+      "name": "General"
+    },
+    "contact": {
+      "email": "eldridge777l@surveysparrow.com",
+      "mobile": "424-998-0848",
+      "full_name": "Eldridge Rogahn",
+      "last_name": "Rogahn",
+      "first_name": "Eldridge",
+      "createddate": "10-10-2023",
+      "id": 1001000589
+    },
+    "meta_data": {
+      "browser": "Chrome 119.0.0.0",
+      "os": "macOS 10.15.7",
+      "time_zone": "Asia/Calcutta",
+      "browser_language": "en-US"
+    },
+    "answers": {
+      "1001000645": {
+        "answer": 9,
+        "step": 10,
+        "question": "op 1",
+        "question_tags": [],
+        "question_type": "",
+        "question_id": 1001000645,
+        "skipped": false
+      },
+      "1001000646": {
+        "answer": "yui",
+        "answer_sentiment": null,
+        "question": "trext",
+        "question_tags": [],
+        "question_type": "",
+        "question_id": 1001000646,
+        "skipped": false
+      }
+    },
+    "variables": {
+      "variable_1": "56"
+    },
+    "expressions": {
+      "1001000001": "9.000000000000000"
+    },
+    "channel": {
+      "id": 1001000246,
+      "type": "EMBED",
+      "name": "Embed Share 1",
+      "status": "ACTIVE",
+      "subject": "Could you spare a quick moment to give some feedback?",
+      "is_default": false,
+      "limits": null,
+      "token": "tt-wuMTgKw8kTZE2bhqAT1Brp",
+      "web_url": "https://ayesha.surveysparrow.com/s/test/tt-853e56"
+    }
+  },
+  "account_id": 100000001
+}
