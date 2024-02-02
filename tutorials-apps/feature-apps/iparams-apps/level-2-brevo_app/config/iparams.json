@@ -1,0 +1,12 @@
+{
+  "brevo_api_key": {
+      "display_name": "Brevo API Key",
+      "description": "Please enter your Brevo API key.",
+      "required": true,
+      "secure": true,
+      "type": "api_key",
+      "type_attributes": {
+        "product": "surveysparrow"
+      }
+    }
+}
