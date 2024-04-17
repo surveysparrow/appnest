@@ -14,9 +14,11 @@ import Question from './Question';
 import Logo from "../assets/appnest_logo.png"
 import axios from 'axios';
 import Loader from './loader';
+import Modal from './Modal';
+
 const Main = (props) => {
   const [questions, setQuestions] = useState([])
-  const [surveyid, setSurveyId] = useState(0)
+  const [surveyId, setsurveyId] = useState(0)
   const [search, setSearch] = useState('')
   const [loader, setLoader] = useState(false)
   const [qids, setQids] = useState([])
@@ -28,18 +30,18 @@ const Main = (props) => {
     try {
       setLoader(true);
       let allQuestions = [];
-      let i = 1;
+      let pageNo = 1;
       let response;
 
       do {
-        response = await axios.get(`https://api.surveysparrow.com/v3/questions?page=${i}&survey_id=${surveyid}`, {
+        response = await axios.get(`https://api.surveysparrow.com/v3/questions?page=${pageNo}&survey_id=${surveyId}`, {
           headers: {
             Authorization: 'Bearer prTp291Zd5mN5eots8Bio2_eTaUWuvLOGquBfJ3jiAQELSxXnqfVN0H47HFcG5Cpzhgeic-QXknDhIKNpfL_uUGQ'
           }
         });
 
         allQuestions = allQuestions.concat(response?.data?.data);
-        i++;
+        pageNo++;
       } while (response?.data?.has_next_page);
 
       setQuestions(allQuestions);
@@ -91,11 +93,11 @@ const Main = (props) => {
       });
     } catch (error) {
       console.log(error);
-    } finally{
+    } finally {
       setBtnLoader(false)
       setShowModal(false);
     }
-    
+
   };
 
   const filterQuestions = (questions, search) => {
@@ -122,7 +124,7 @@ const Main = (props) => {
           borderBottom: '$borderWidths$xs solid $neutral300',
         }}>
           <Flex >
-            <Avatar src={Logo} size="2xl" rounded="xs"></Avatar>
+            <Avatar src={Logo} size="2xl" rounded="xs" />
             <Box css={{
               marginLeft: "$5"
             }}>
@@ -141,9 +143,9 @@ const Main = (props) => {
             </Box>
           </Flex>
           <Flex justifyContent='center' alignItems='center'>
-            <Input onChange={(e) => setSurveyId(e.target.value)} type='number' size={'lg'} placeholder='Enter Your Survey Id  ...' css={{
+            <Input onChange={(e) => setsurveyId(e.target.value)} type='number' size={'lg'} placeholder='Enter Your Survey Id  ...' css={{
               width: "250px"
-            }} ></Input>
+            }} />
             <Button variant="solid" color="primary" size="lg" onClick={getQuestions} css={{
               marginLeft: "$10"
             }} >
@@ -157,12 +159,12 @@ const Main = (props) => {
               width: "100%",
             }}>
               <Flex alignItems='center' css={{
-                paddingBlock: "$10 $10",
+                paddingBlock: "$10",
               }} >
                 <Flex justifyContent="start" alignItems='center' >
                   <Input onChange={(e) => setSearch(e.target.value)} iconRight={<SearchIcon />} size={'lg'} placeholder='Search Questions here ..' css={{
                     width: "400px"
-                  }} ></Input>
+                  }} />
                 </Flex>
                 <Flex justifyContent='center' alignItems='center' css={{
                   marginLeft: "$10"
@@ -193,37 +195,7 @@ const Main = (props) => {
                     key={question.id}
                   />
                 )) : null}
-                {showModal ? (<AlertDialog open>
-                  <AlertDialogContent css={{ minWidth: 550 }}>
-                    <React.Fragment>
-                      <AlertDialogTitle>
-                        Delete Questions
-                      </AlertDialogTitle>
-                      <AlertDialogDescription css={{ lineHeight: '$md' }}>
-                        This action is irreversible, and all related data will be
-                        deleted accordingly. Proceed with caution.
-                      </AlertDialogDescription>
-                      <AlertDialogActions>
-                        <AlertDialogCancel asChild>
-                          <Button color="default" size="lg" onClick={() => setShowModal(false)}>
-                            Cancel
-                          </Button>
-                        </AlertDialogCancel>
-                        <AlertDialogAction asChild>
-                          <Button
-                            color="error"
-                            size="lg"
-                            css={{ marginLeft: '$3' }}
-                            loading={btnLoader}
-                            onClick={handleDelete}
-                          >
-                            Delete Questions
-                          </Button>
-                        </AlertDialogAction>
-                      </AlertDialogActions>
-                    </React.Fragment>
-                  </AlertDialogContent>
-                </AlertDialog>) : null}
+                {showModal ? (<Modal  btnLoader={btnLoader} handleDelete={handleDelete} resetModal={() => setShowModal(false)} />) : null}
               </Box>
             </Flex>
 
@@ -233,9 +205,9 @@ const Main = (props) => {
             <Avatar src={icon} rounded={'xs'} css={{
               width: "300px",
               height: "300px",
-            }} ></Avatar>
+            }} />
           </Flex>)
-          : <><Loader /></>}
+          : <Loader />}
       </Flex>
     </Box>
   )

@@ -3,7 +3,7 @@
   "product": {
     "surveysparrow": {
       "location": {
-       "survey_settings": {
+       "home_navigation": {
           "url": "index.html",
           "icon": "icon.svg",
           "modalSize": "xl"
