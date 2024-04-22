@@ -1,16 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import Main from './components/main';
-import { ThemeProvider, Toastr } from '@sparrowengg/twigs-react';
+import React, { useEffect, useState } from "react";
+import { Flex, ThemeProvider, Toastr } from "@sparrowengg/twigs-react";
+import Main from "./components/main"
 
 const App = () => {
+  const [loaded, setLoaded] = useState(true);
+  const [client, setClient] = useState(null);
 
+  useEffect(() => {
+    const client = window.app.initialized();
+    setClient(client);
+    setLoaded(false);
+  }, []);
 
   return (
     <>
       <Toastr duration={1000} position="top-center" css={{
         paddingTop: "$10"
-      }} />
-      <ThemeProvider theme={{
+      }} />    <ThemeProvider theme={{
         colors: {
           bacground: '#f6f8fa',
         },
@@ -18,10 +24,20 @@ const App = () => {
           body: "Roboto, sans-serif",
         }
       }}>
-       <Main />
+        {loaded ? (
+          <Flex
+            alignItems="center"
+            justifyContent="center"
+            css={{ width: "100%", height: "100vh" }}
+          >
+            Loading....
+          </Flex>
+        ) : (
+          <Main client={client} />
+        )}
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
 export default App;

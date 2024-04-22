@@ -3,7 +3,7 @@
   "product": {
     "surveysparrow": {
       "location": {
-       "home_navigation": {
+       "survey_settings": {
           "url": "index.html",
           "icon": "icon.svg",
           "modalSize": "xl"
@@ -11,7 +11,9 @@
       }
     }
   },
-  "whitelisted-domains": [],
+  "whitelisted-domains": [
+    "https://(.*).surveysparrow.com(.*)"
+ ],
   "engines": {
     "node": "18.19.1",
     "ssdk": "0.1.10"

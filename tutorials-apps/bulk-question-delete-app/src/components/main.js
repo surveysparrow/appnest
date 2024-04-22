@@ -1,61 +1,47 @@
 import React, { useState, useEffect } from 'react'
 import icon from "../assets/icon.png"
 import {
-  Box, Heading, Text, Button, Flex, Input, Checkbox, Avatar, toast, AlertDialog,
-  AlertDialogContent,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogActions,
-  AlertDialogCancel,
-  AlertDialogAction,
+  Box, Heading, Text, Button, Flex, Input, Checkbox, Avatar, toast,
 } from "@sparrowengg/twigs-react";
 import { SearchIcon } from '@sparrowengg/twigs-react-icons';
 import Question from './Question';
 import Logo from "../assets/appnest_logo.png"
-import axios from 'axios';
 import Loader from './loader';
 import Modal from './Modal';
 
-const Main = (props) => {
+const Main = ({client}) => {
   const [questions, setQuestions] = useState([])
-  const [surveyId, setsurveyId] = useState(0)
-  const [search, setSearch] = useState('')
   const [loader, setLoader] = useState(false)
   const [qids, setQids] = useState([])
   const [btnLoader, setBtnLoader] = useState(false)
   const [selectAll, setSelectAll] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [filteredQuestions, setFilteredQuestion] = useState([])
-  const getQuestions = async () => {
+
+  const getQuestions = async (client) => {
     try {
+      const surveyId = await client.data.get("getSurveyId");
       setLoader(true);
       let allQuestions = [];
       let pageNo = 1;
+      let question;
       let response;
-
       do {
-        response = await axios.get(`https://api.surveysparrow.com/v3/questions?page=${pageNo}&survey_id=${surveyId}`, {
-          headers: {
-            Authorization: 'Bearer prTp291Zd5mN5eots8Bio2_eTaUWuvLOGquBfJ3jiAQELSxXnqfVN0H47HFcG5Cpzhgeic-QXknDhIKNpfL_uUGQ'
+        response = await client.request.get(`https://api.surveysparrow.com/v3/questions?page=${pageNo}&survey_id=${surveyId}`, {
+          options: {
+            headers: {
+              Authorization: "Bearer <%=iparams.surveysparrow_api_key%>"
+            }
           }
         });
-
-        allQuestions = allQuestions.concat(response?.data?.data);
+        question= JSON.parse(response).body
+        allQuestions = allQuestions.concat(question.data);
         pageNo++;
-      } while (response?.data?.has_next_page);
-
+      } while (question.has_next_page);
       setQuestions(allQuestions);
       setFilteredQuestion(allQuestions);
     } catch (error) {
-      if (error?.response?.status === 404) {
-        toast({
-          variant: 'error',
-          title: 'Invalid Survey Id',
-          description: 'Please check the surveyId'
-        });
-      } else {
-        console.log(error);
-      }
+      console.log(error)
     } finally {
       setLoader(false);
     }
@@ -69,13 +55,16 @@ const Main = (props) => {
   const deleteQuestions = async (ids) => {
     try {
       await Promise.all(ids.map(async (id) => {
-        await axios.delete(`https://api.surveysparrow.com/v3/questions/${id}`, {
-          headers: {
-            Authorization: 'Bearer prTp291Zd5mN5eots8Bio2_eTaUWuvLOGquBfJ3jiAQELSxXnqfVN0H47HFcG5Cpzhgeic-QXknDhIKNpfL_uUGQ'
+        await client.request.delete(`https://api.surveysparrow.com/v3/questions/${id}`, {
+          options: {
+            headers: {
+              Authorization: "Bearer <%=iparams.surveysparrow_api_key%>"
+            }
           }
         });
         await new Promise(resolve => setTimeout(resolve, 700));
       }));
+
     } catch (error) {
       console.log(error);
       throw error;
@@ -86,11 +75,11 @@ const Main = (props) => {
     try {
       setBtnLoader(true)
       await deleteQuestions(qids);
-      await getQuestions();
       toast({
         variant: 'success',
         title: 'Questions Deleted Successfully',
       });
+      await getQuestions(client);
     } catch (error) {
       console.log(error);
     } finally {
@@ -105,9 +94,9 @@ const Main = (props) => {
     setFilteredQuestion(ques)
   }
 
-  useEffect(() => {
-    filterQuestions(questions, search)
-  }, [search])
+  useEffect(()=> {
+    getQuestions(client)
+  },[])
 
   return (
     <Box css={{
@@ -142,7 +131,7 @@ const Main = (props) => {
               </Text>
             </Box>
           </Flex>
-          <Flex justifyContent='center' alignItems='center'>
+          {/* <Flex justifyContent='center' alignItems='center'>
             <Input onChange={(e) => setsurveyId(e.target.value)} type='number' size={'lg'} placeholder='Enter Your Survey Id  ...' css={{
               width: "250px"
             }} />
@@ -151,7 +140,7 @@ const Main = (props) => {
             }} >
               Get Questions
             </Button>
-          </Flex>
+          </Flex> */}
         </Flex>
         {!loader ?
           (questions.length ? (
@@ -162,7 +151,7 @@ const Main = (props) => {
                 paddingBlock: "$10",
               }} >
                 <Flex justifyContent="start" alignItems='center' >
-                  <Input onChange={(e) => setSearch(e.target.value)} iconRight={<SearchIcon />} size={'lg'} placeholder='Search Questions here ..' css={{
+                  <Input onChange={(e) => filterQuestions(questions, e.target.value)} iconRight={<SearchIcon />} size={'lg'} placeholder='Search Questions here ..' css={{
                     width: "400px"
                   }} />
                 </Flex>
