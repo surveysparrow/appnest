@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Flex, ThemeProvider, Toastr } from "@sparrowengg/twigs-react";
-import Main from "./components/main"
+import Main from "./components/main";
 
 const App = () => {
   const [loaded, setLoaded] = useState(true);
@@ -14,16 +14,23 @@ const App = () => {
 
   return (
     <>
-      <Toastr duration={1000} position="top-center" css={{
-        paddingTop: "$10"
-      }} />    <ThemeProvider theme={{
-        colors: {
-          bacground: '#f6f8fa',
-        },
-        fonts: {
-          body: "Roboto, sans-serif",
-        }
-      }}>
+      <Toastr
+        duration={1000}
+        position="top-center"
+        css={{
+          paddingTop: "$10",
+        }}
+      />{" "}
+      <ThemeProvider
+        theme={{
+          colors: {
+            bacground: "#f6f8fa",
+          },
+          fonts: {
+            body: "Roboto, sans-serif",
+          },
+        }}
+      >
         {loaded ? (
           <Flex
             alignItems="center"
