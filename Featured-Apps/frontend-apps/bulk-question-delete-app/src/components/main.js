@@ -104,6 +104,13 @@ const Main = ({ client }) => {
       setShowModal(false);
     }
   };
+  const questionSelection = (checked,id) => {
+    // update Question Ids if the question get selected
+    const updatedQids = checked
+      ? [...qids, id]
+      : qids.filter((qid) => qid !== id); 
+    setQids(updatedQids);
+  }
 
   const filterQuestions = (questions, search) => {
     var ques = questions.filter((question) =>
@@ -232,12 +239,7 @@ const Main = ({ client }) => {
                         content={question.rtxt}
                         id={question.id}
                         qids={qids}
-                        handleChange={(checked, id) => {
-                          const updatedQids = checked
-                            ? [...qids, id]
-                            : qids.filter((qid) => qid !== id);
-                          setQids(updatedQids);
-                        }}
+                        handleChange={(checked, id) => questionSelection(checked,id)}
                         key={question.id}
                       />
                     ))
