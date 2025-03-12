@@ -1,0 +1,17 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": ["https://api.intercom.io(.*)"],
+  "engines": {
+    "node": "18.20.5",
+    "ssdk": "0.3.10"
+  }
+}
