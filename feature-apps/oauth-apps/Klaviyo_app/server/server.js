@@ -37,7 +37,7 @@ const processAddContact = async (args) => {
 
       const response = await $Fetch.post(apiUrl, contactData, {
           headers: {
-              'Authorization': "Bearer <%=access_token%>", // Fix incorrect token placeholder
+              'Authorization': "Bearer <%=access_token%>",
               'Accept': 'application/json',
               'Content-Type': 'application/json',
               'Revision': '2023-10-15'

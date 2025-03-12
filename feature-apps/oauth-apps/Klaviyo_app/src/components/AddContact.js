@@ -13,9 +13,6 @@ const AddContact = ({client}) => {
                 lastName: lastName
             }
         })
-        // addContact(accessToken, email, firstName, lastName)
-        //     .then(data => alert("Contact Added Successfully!"))
-        //     .catch(err => alert("Error Adding Contact!"));
     };
 
     return (

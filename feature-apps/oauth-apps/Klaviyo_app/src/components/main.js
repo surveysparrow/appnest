@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Heading, Link } from "@sparrowengg/twigs-react"
+import { Flex } from "@sparrowengg/twigs-react"
 import AddContact from './AddContact'
 import Contacts from './Contacts'
 
