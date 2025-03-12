@@ -1,6 +1,6 @@
 {
-    "client_id": "3aad2d3a-25f2-43df-a70f-07f41e147ee8",
-    "client_secret": "5e77ff46-c27f-4144-abe9-dde5f8d62b44",
+    "client_id": "your_client_id",
+    "client_secret": "your_client_secret",
     "authorize_url": "https://app.intercom.io/oauth",
     "token_url": "https://api.intercom.io/auth/eagle/token",
     "options": {
