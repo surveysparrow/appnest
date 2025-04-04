@@ -1,0 +1,64 @@
+{
+    "eventType": "onSubmissionUpdate",
+    "ruleEvent": "SUBMISSION_UPDATED",
+    "objectType": "SUBMISSION",
+    "objectId": 1000238196,
+    "data": {
+        "id": 1000238196,
+        "time_taken": "2.00",
+        "state": "STARTED",
+        "start_time": "2024-03-01T13:06:00.856Z",
+        "completed_time": null,
+        "device_type": "COMPUTER",
+        "feedback": null,
+        "ip": null,
+        "location": null,
+        "language": "en",
+        "geo_info": {},
+        "created_at": "2024-03-01T13:06:00.933Z",
+        "updated_at": "2024-03-01T13:06:01.567Z",
+        "account_id": 1000001103,
+        "nomination_id": null,
+        "survey_id": 1000014426,
+        "contact": null,
+        "meta_data": {
+            "os": "macOS 10.15.7",
+            "browser": "Chrome 121.0.0.0",
+            "time_zone": "Asia/Calcutta",
+            "browser_language": "en-GB"
+        },
+        "survey": {
+            "id": 1000014426,
+            "survey_type": "ClassicForm",
+            "name": "classic"
+        },
+        "folder": {
+            "id": 1000002325,
+            "name": "General"
+        },
+        "answers": {
+            "1000148466": {
+                "answer": 6,
+                "step": 10,
+                "question": "$Param_a.sr $Param_sr_12 opn",
+                "question_type": "OpinionScale",
+                "question_tags": [],
+                "question_id": 1000148466,
+                "skipped": false
+            }
+        },
+        "variables": {},
+        "expressions": {},
+        "channel": {
+            "id": 1000018047,
+            "type": "LINK",
+            "name": "Web Link Share",
+            "status": "ACTIVE",
+            "subject": "LINK Share",
+            "is_default": true,
+            "limits": null,
+            "web_url": "https://sankarsuite.surveysparrow.com/s/classic/tt-tiK6x6nTvnXzLwoZdxx7Ae"
+        }
+    },
+    "account_id": 1000001103
+}

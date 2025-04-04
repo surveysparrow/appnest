@@ -1,0 +1,52 @@
+{
+    "eventType": "onContactListDelete",
+    "ruleEvent": "CONTACT_LIST_DELETED",
+    "objectType": "CONTACT_LIST",
+    "objectId": 1001000008,
+    "data": {
+      "id": 1001000008,
+      "name": "fullname",
+      "description": null,
+      "type": "DYNAMIC",
+      "properties": {
+        "conditions": {
+          "filter_groups": [
+            {
+              "connector": "AND",
+              "filters": [
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "fullName",
+                    "data_type": "STRING",
+                    "label": "Full Name",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                },
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "jobTitle",
+                    "data_type": "STRING",
+                    "label": "Job Title",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                }
+              ]
+            }
+          ],
+          "global_connector": "AND"
+        }
+      },
+      "contact_type_id": 2,
+      "created_at": "2024-02-21T07:04:04.134Z",
+      "updated_at": "2024-02-21T07:11:40.144Z",
+      "deleted_at": "2024-02-21T07:11:40.143Z",
+      "account_id": 12
+    },
+    "account_id": 12
+  }

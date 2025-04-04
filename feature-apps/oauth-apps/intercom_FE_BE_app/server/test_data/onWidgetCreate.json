@@ -1,0 +1,80 @@
+{
+    "eventType": "onWidgetCreate",
+    "ruleEvent": "WIDGET_CREATE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "id": 1000001459,
+      "name": "demo",
+      "properties": {
+        "date": {
+          "date_range": {
+            "end_date": null,
+            "start_date": null,
+            "display_string": "All Time"
+          },
+          "date_aggregation": "MONTHLY"
+        },
+        "meta": {},
+        "filters": {
+          "filter_groups": [],
+          "global_connector": "AND"
+        },
+        "metrics": [
+          {
+            "aggregation": "COUNT",
+            "resource_meta": {
+              "metric_id": 1000001494,
+              "metric_type": "OpinionScale",
+              "metric_label": "some op qsttn",
+              "metric_properties": {
+                "data": {
+                  "max": "builder.opinion_scale.max",
+                  "mid": "builder.opinion_scale.mid",
+                  "min": "builder.opinion_scale.min",
+                  "step": 10,
+                  "start": 0,
+                  "reversed_order": false,
+                  "not_applicable_tooltip_text": "Not Applicable"
+                }
+              }
+            },
+            "resource_type": "QUESTION",
+            "data_source_id": 1000000375,
+            "data_source_type": "survey",
+            "data_survey_type": "ClassicForm"
+          }
+        ],
+        "sources": [
+          {
+            "resource_id": 1000000375,
+            "survey_type": "ClassicForm",
+            "resource_type": "cognivue test 1"
+          }
+        ],
+        "chart_type": {
+          "type": "VERTICAL_BAR_CHART"
+        },
+        "color_theme": {
+          "mono_color": null,
+          "infographic_color": "#51D3D9"
+        },
+        "dimensions": [
+          {
+            "choices": {},
+            "resource_meta": {
+              "dimension_id": "submissionTime",
+              "dimension_type": "SUBMISSION_TIME",
+              "dimension_label": "Submission Time"
+            },
+            "resource_type": "CUSTOM",
+            "data_source_id": 1000000375,
+            "sub_dimensions": [],
+            "data_source_type": "survey"
+          }
+        ]
+      },
+      "account_id": 1000000053,
+      "dashboard_id": 1000000009
+    },
+    "account_id": 1000000053
+  }

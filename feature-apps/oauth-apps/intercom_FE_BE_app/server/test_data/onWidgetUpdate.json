@@ -1,0 +1,176 @@
+{
+    "eventType": "onWidgetUpdate",
+    "ruleEvent": "WIDGET_UPDATE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "current_data": {
+        "id": 1000001458,
+        "name": "bar charrt 2",
+        "properties": {
+          "date": {
+            "date_range": {
+              "end_date": null,
+              "start_date": null,
+              "display_string": "All Time"
+            },
+            "date_aggregation": "MONTHLY"
+          },
+          "meta": {},
+          "filters": {
+            "filter_groups": [],
+            "global_connector": "AND"
+          },
+          "metrics": [
+            {
+              "aggregation": "COUNT",
+              "resource_meta": {
+                "metric_id": 1000001489,
+                "metric_type": "NPSScore",
+                "metric_label": "How likely are you to recommend caseactivitylogs2 to a friend or colleague?",
+                "metric_properties": {
+                  "data": {
+                    "labels": {
+                      "left": "builder.opinion_scale.min",
+                      "right": "builder.opinion_scale.max"
+                    },
+                    "appearance": {
+                      "filled": true,
+                      "button_shape": "Square"
+                    },
+                    "start_with_one": false,
+                    "segment_colors": {
+                      "passives": "FFDB78",
+                      "promoters": "8DCD71",
+                      "detractors": "FC9B9C"
+                    },
+                    "tinted_options": false,
+                    "include_feedback": true,
+                    "segmented_options": false
+                  }
+                }
+              },
+              "resource_type": "QUESTION",
+              "data_source_id": 1000000372,
+              "data_source_type": "survey",
+              "data_survey_type": "NPS"
+            }
+          ],
+          "sources": [
+            {
+              "resource_id": 1000000372,
+              "survey_type": "NPS",
+              "resource_type": "Feedback NPS"
+            }
+          ],
+          "chart_type": {
+            "type": "VERTICAL_BAR_CHART"
+          },
+          "color_theme": {
+            "mono_color": null,
+            "infographic_color": "#51D3D9"
+          },
+          "dimensions": [
+            {
+              "choices": {},
+              "resource_meta": {
+                "dimension_id": "submissionTime",
+                "dimension_type": "SUBMISSION_TIME",
+                "dimension_label": "Submission Time"
+              },
+              "resource_type": "CUSTOM",
+              "data_source_id": 1000000372,
+              "sub_dimensions": [],
+              "data_source_type": "survey"
+            }
+          ]
+        },
+        "account_id": 1000000053,
+        "dashboard_id": 1000000009
+      },
+      "previous_data": {
+        "id": 1000001458,
+        "name": "bar charrt",
+        "properties": {
+          "date": {
+            "date_range": {
+              "end_date": null,
+              "start_date": null,
+              "display_string": "All Time"
+            },
+            "date_aggregation": "MONTHLY"
+          },
+          "meta": {},
+          "filters": {
+            "filter_groups": [],
+            "global_connector": "AND"
+          },
+          "metrics": [
+            {
+              "aggregation": "COUNT",
+              "resource_meta": {
+                "metric_id": 1000001489,
+                "metric_type": "NPSScore",
+                "metric_label": "How likely are you to recommend caseactivitylogs2 to a friend or colleague?",
+                "metric_properties": {
+                  "data": {
+                    "labels": {
+                      "left": "builder.opinion_scale.min",
+                      "right": "builder.opinion_scale.max"
+                    },
+                    "appearance": {
+                      "filled": true,
+                      "button_shape": "Square"
+                    },
+                    "start_with_one": false,
+                    "segment_colors": {
+                      "passives": "FFDB78",
+                      "promoters": "8DCD71",
+                      "detractors": "FC9B9C"
+                    },
+                    "tinted_options": false,
+                    "include_feedback": true,
+                    "segmented_options": false
+                  }
+                }
+              },
+              "resource_type": "QUESTION",
+              "data_source_id": 1000000372,
+              "data_source_type": "survey",
+              "data_survey_type": "NPS"
+            }
+          ],
+          "sources": [
+            {
+              "resource_id": 1000000372,
+              "survey_type": "NPS",
+              "resource_type": "Feedback NPS"
+            }
+          ],
+          "chart_type": {
+            "type": "VERTICAL_BAR_CHART"
+          },
+          "color_theme": {
+            "mono_color": null,
+            "infographic_color": "#51D3D9"
+          },
+          "dimensions": [
+            {
+              "choices": {},
+              "resource_meta": {
+                "dimension_id": "submissionTime",
+                "dimension_type": "SUBMISSION_TIME",
+                "dimension_label": "Submission Time"
+              },
+              "resource_type": "CUSTOM",
+              "data_source_id": 1000000372,
+              "sub_dimensions": [],
+              "data_source_type": "survey"
+            }
+          ]
+        },
+        "account_id": 1000000053,
+        "dashboard_id": 1000000009
+      }
+    },
+    "account_id": 1000000053
+  }

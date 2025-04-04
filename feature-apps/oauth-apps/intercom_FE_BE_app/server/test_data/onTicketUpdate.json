@@ -1,0 +1,46 @@
+{
+    "eventType": "onTicketUpdate",
+    "ruleEvent": "TICKET_UPDATED",
+    "objectType": "TICKET",
+    "objectId": 100000004,
+    "data": {
+        "id": 100000004,
+        "subject": "Unable to restrict multiple submissions based on specific survey questions",
+        "description": "Restriciting submissions based on contact is possible but doesn't work with specific questions in the survey",
+        "created_at": "2023-12-20T10:53:18.507Z",
+        "updated_at": "2023-12-21T07:00:49.754Z",
+        "deleted_at": null,
+        "submission_id": null,
+        "nps_submission_id": null,
+        "priority": {
+            "id": 100000001,
+            "value": "High"
+        },
+        "status": {
+            "id": 100000004,
+            "value": "Open"
+        },
+        "source": {
+            "id": 100000006,
+            "value": "Call"
+        },
+        "agent": {
+            "id": 100000003,
+            "name": "Eldridge",
+            "email": "eldridge777l@surveysparrow.com"
+        },
+        "requester": {
+            "id": 100000003,
+            "name": "Eldridge",
+            "email": "eldridge777l@surveysparrow.com",
+            "phone": "9123456789",
+            "mobile": "123456789"
+        },
+        "custom_fields": {
+            "Text_field": "Random text"
+        },
+        "resolution_due": "2023-12-25T11:46:18.507Z",
+        "first_response_due": "2023-12-18T11:46:18.507Z"
+    },
+    "account_id": 1000001115
+}

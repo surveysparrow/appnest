@@ -1,0 +1,12 @@
+{
+    "client_id": "xxxxxxxx",
+    "client_secret": "xxxxxxxx",
+    "authorize_url": "https://app.intercom.io/oauth",
+    "token_url": "https://api.intercom.io/auth/eagle/token",
+    "options": {
+      "response_type": "code",
+      "access_type": "offline",
+      "prompt": "consent",
+      "scope": []
+    }
+  }  

@@ -1,0 +1,49 @@
+{
+    "eventType": "onSubmissionCreate",
+    "ruleEvent": "SUBMISSION_CREATED",
+    "objectType": "SUBMISSION",
+    "objectId": 1000238197,
+    "data": {
+        "id": 1000238197,
+        "state": "STARTED",
+        "start_time": "2024-03-01T13:06:22.508Z",
+        "device_type": "COMPUTER",
+        "feedback": null,
+        "ip": null,
+        "location": null,
+        "language": null,
+        "geo_info": {},
+        "created_at": "2024-03-01T13:06:22.526Z",
+        "updated_at": "2024-03-01T13:06:22.526Z",
+        "account_id": 1000001103,
+        "nomination_id": null,
+        "survey_id": 1000014426,
+        "contact": null,
+        "meta_data": {
+            "os": "macOS 10.15.7",
+            "browser": "Chrome 121.0.0.0",
+            "time_zone": "Asia/Calcutta",
+            "browser_language": "en-GB"
+        },
+        "survey": {
+            "id": 1000014426,
+            "survey_type": "ClassicForm",
+            "name": "classic"
+        },
+        "folder": {
+            "id": 1000002325,
+            "name": "General"
+        },
+        "channel": {
+            "id": 1000018047,
+            "type": "LINK",
+            "name": "Web Link Share",
+            "status": "ACTIVE",
+            "subject": "LINK Share",
+            "is_default": true,
+            "limits": null,
+            "web_url": "https://sankarsuite.surveysparrow.com/s/classic/tt-tiK6x6nTvnXzLwoZdxx7Ae"
+        }
+    },
+    "account_id": 1000001103
+}

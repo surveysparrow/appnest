@@ -1,0 +1,50 @@
+{
+    "eventType": "onSurveyEdit",
+    "ruleEvent": "SURVEY_EDITED",
+    "objectType": "SURVEY",
+    "objectId": 1000019502,
+    "data": {
+        "id": 1000019502,
+        "name": "sankar classic",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+            "has_llmsentiment": true,
+            "autosize_heading": true,
+            "survey_randomiser": false,
+            "progress": {
+                "builder_completed": true,
+                "design_completed": true,
+                "share_completed": true
+            }
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2024-03-04T09:51:56.813Z",
+        "updated_at": "2024-03-04T10:36:32.088Z",
+        "deleted_at": null,
+        "account_id": 1000001103,
+        "user_id": 1000002296,
+        "survey_folder_id": 1000002325,
+        "thankyou_template_id": null,
+        "theme_id": null
+    },
+    "account_id": 1000001103
+}

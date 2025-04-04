@@ -1,0 +1,8 @@
+{
+    "eventType": "onDashboardDelete",
+    "ruleEvent": "DASHBOARD_DELETE",
+    "objectType": "DASHBOARD",
+    "data": { "id": 1000000170, "account_id": 1000000053 },
+    "account_id": 1000000053
+}
+  
