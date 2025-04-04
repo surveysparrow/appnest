@@ -1,0 +1,125 @@
+{
+    "eventType": "onChannelDelete",
+    "ruleEvent": "CHANNEL_DELETED",
+    "objectType": "CHANNEL",
+    "objectId": 1000023746,
+    "data": {
+        "id": 1000023746,
+        "type": "EMAIL",
+        "name": "Terry",
+        "status": "ACTIVE",
+        "subject": "Could you spare a quick moment to give some feedback?",
+        "properties": {
+            "email": {
+                "mail_content_lists": [
+                    {
+                        "id": "q1rs",
+                        "type": "TEXT",
+                        "value": {
+                            "blocks": [
+                                {
+                                    "key": "1hern",
+                                    "text": "Hello  \n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo",
+                                    "type": "unstyled",
+                                    "depth": 0,
+                                    "inline_style_ranges": [],
+                                    "entity_ranges": [],
+                                    "data": {}
+                                }
+                            ],
+                            "entity_map": {}
+                        },
+                        "component_properties": {
+                            "align_items": "center"
+                        }
+                    },
+                    {
+                        "id": "d611",
+                        "type": "SPACER",
+                        "value": "",
+                        "component_properties": {
+                            "align_items": "center"
+                        }
+                    },
+                    {
+                        "id": "3g81",
+                        "type": "LINK",
+                        "value": "Get Started",
+                        "component_properties": {
+                            "align_items": "center",
+                            "parameters": []
+                        }
+                    }
+                ],
+                "html": {
+                    "header": "",
+                    "footer": "<table style=\"width:100%;background-color: #F6F6F6;\">\n<tbody>\n  <tr>\n    <td style=\"padding: 32px 0\">\n      <table style=\"width:100%;\" align=\"center\">\n        <tbody>\n          <tr>\n            <td class=\"ss-360--block\" style=\"padding: 0 48px\" align=\"center\">\n                <a href=\"https://surveysparrow.com\" target=\"_blank\"><img style=\"max-width: 120px;height:auto\"\n                    width=\"120\" height=\"auto\"\n                    src=\"https://static.surveysparrow.com/email-templates/e360/surveysparrow-logo-new.png\"></a>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <table class=\"spacer\"\n        style=\"border-collapse:collapse;border-spacing:0;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top;width:100%\">\n        <tbody\n          style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif\">\n          <tr\n            style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top\">\n            <td height=\"24px\"\n              style=\"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word\">\n              &#xA0;</td>\n          </tr>\n        </tbody>\n      </table>\n      <table style=\"width:100%;\" align=\"center\">\n        <tbody>\n          <tr>\n            <td class=\"ss-360--block\" style=\"padding: 0 48px\" align=\"center\">\n                <table style=\"width:50%;\">\n                  <tbody>\n                    <tr>\n                      <td style=\"text-align: center;\">\n                        <a href=\"https://www.facebook.com/surveysparrow/\" target=\"_blank\"><img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/facebook.png\"></a>\n                      </td>\n                      <td style=\"text-align: center;\">\n                        <a href=\"https://twitter.com/surveysparrow\" target=\"_blank\"><img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/twitter.png\"></a>\n                      </td>\n                      <td style=\"text-align: center;\">\n                        <a href=\"https://www.linkedin.com/company/surveysparrow/\" target=\"_blank\"><img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/linkedin-logo.png\"></a>\n                      </td>\n                      <td style=\"text-align: center;\">\n                        <a href=\"https://www.instagram.com/surveysparrow/\" target=\"_blank\"><img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/instagram.png\"></a>\n                      </td>\n                    </tr>\n                  </tbody>\n                </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <table class=\"spacer\"\n        style=\"border-collapse:collapse;border-spacing:0;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top;width:100%\">\n        <tbody\n          style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif\">\n          <tr\n            style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top\">\n            <td height=\"24px\"\n              style=\"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word\">\n              &#xA0;</td>\n          </tr>\n        </tbody>\n      </table>\n      <table style=\"width:100%;\">\n        <tbody>\n          <tr>\n            <td class=\"ss-360--block\" style=\"padding: 0 48px\">\n              <p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;color:#25292D !important;font-size:14px !important;line-height:1.4 !important;text-align: center !important;margin-bottom: 8px !important;margin-top: 0px !important;font-weight: normal !important;\">2345 Yale St FL 1, Palo Alto, CA 94306</p>\n              <p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;color:#63686F !important;font-size:12px !important;line-height:1.4 !important;text-align: center !important;margin-bottom: 8px !important;margin-top: 0px !important;font-weight: normal !important;\">Copyright © SurveySparrow Inc. 2021</p>\n              <p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;text-align: center;margin-bottom:0px!important;line-height:1.4;font-size:10px;color:#BDBDBD;\">\n                {unsubscribeLink} | <a href={privacyPolicyLink} style=\"Margin:0;color:#BDBDBD;font-family:Montserrat,sans-serif!important;font-size:14px;font-weight:400;line-height:1.3;margin:0;text-align:left;text-decoration:underline; font-size:10px;\"><span style=\"font-size:10px;\">Privacy Policy</span></a>\n              </p>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </td>\n  </tr>\n</tbody>\n</table>",
+                    "body": "<html><head></head><body><tr><td width=\"32px\" style=\"width:32px;\"></td><td style=\"font-family:'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important; padding:0;text-align: center;color:{bodyProperties.textColor};\"><p style=\"color:{bodyProperties.textColor};margin-block-start:0!important;margin-block-end:0!important;Margin:0!important;font-size:16px!important;font-weight:300!important;line-height:1.4!important;font-family:'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;\">Hello &nbsp;<br style=\"margin: 0px;\">\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p></td><td width=\"32px\" style=\"width:32px;\"></td></tr></body></html>\n    <tr>\n      <td colspan=\"3\" height=\"32px\" style=\"height:32px;\">&#xA0;</td>\n    </tr>{component.3g81}"
+                }
+            },
+            "email_header": {
+                "logo": null,
+                "brand_name": null
+            },
+            "show_survey_sparrow_branding": true,
+            "embed_first_question": true,
+            "reply_to": "Yadira.Daugherty@hotmail.com",
+            "custom_footer": false,
+            "from_address": "sankarsuite@mailer.paid-existing-non-business-non-bulk2.helpsparrow.com"
+        },
+        "is_default": false,
+        "multi_language_subject": {},
+        "mode": null,
+        "is_primary": false,
+        "created_at": "2024-03-05T09:03:00.233Z",
+        "updated_at": "2024-03-05T09:10:55.724Z",
+        "deleted_at": "2024-03-05T09:10:55.724Z",
+        "account_id": 1000001103,
+        "device_id": null,
+        "survey": {
+            "id": 1000019502,
+            "name": "sankar classic",
+            "welcome_rtxt": null,
+            "welcome_description": null,
+            "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+            "thankyou_json": [],
+            "archived": false,
+            "visibility": "Mine",
+            "survey_type": "ClassicForm",
+            "template_name": null,
+            "properties": {
+                "has_llmsentiment": true,
+                "autosize_heading": true,
+                "survey_randomiser": false,
+                "progress": {
+                    "builder_completed": true,
+                    "design_completed": true,
+                    "share_completed": true
+                },
+                "start_assessment": true
+            },
+            "published": true,
+            "eui_version": 3,
+            "phishing": false,
+            "phishing_details": {},
+            "primary_language": "en",
+            "multi_language_welcome_rtxt": null,
+            "multi_language_welcome_description": null,
+            "multi_language_welcome_screen_yes_button_text": null,
+            "multi_language_thankyou_json": null,
+            "multi_language_name": null,
+            "multi_language_properties": {},
+            "response_blocked": false,
+            "logic_blocked": false,
+            "created_at": "2024-03-04T09:51:56.813Z",
+            "updated_at": "2024-03-05T08:04:40.636Z",
+            "deleted_at": null,
+            "account_id": 1000001103,
+            "user_id": 1000002296,
+            "survey_folder_id": 1000002325,
+            "thankyou_template_id": null,
+            "theme_id": null
+        }
+    },
+    "account_id": 1000001103
+}

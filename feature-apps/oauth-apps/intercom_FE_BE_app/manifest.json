@@ -1,0 +1,41 @@
+{
+  "platform-version": "1.0",
+  "product": {
+    "salesparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "icon.svg"
+        }
+      },
+      "functions": {
+        "AddContacts": {
+          "timeout": 10
+        },
+        "getFields": {
+          "timeout": 10
+        },
+        "getIntercomFields": {
+          "timeout": 10
+        }
+      },
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://api.intercom.io(.*)",
+    "https://(.*).surveysparrow.com(.*)",
+    "https://(.*).salesparrow.com(.*)",
+    "http://app.sparrowdesk.test(.*)",
+    "https://63d0-183-82-247-142.ngrok-free.app(.*)"
+  ],
+  "engines": {
+    "node": "18.20.6",
+    "ssdk": "0.3.10"
+  },
+  "dependencies": {}
+}

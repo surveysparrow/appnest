@@ -1,0 +1,25 @@
+{
+    "eventType": "onDashboardUpdate",
+    "ruleEvent": "DASHBOARD_UPDATE",
+    "objectType": "DASHBOARD",
+    "data": {
+      "current_data": {
+        "id": 1000000170,
+        "name": "ddd445567",
+        "description": "",
+        "account_id": 1000000053,
+        "visibility": "SHARED",
+        "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+      },
+      "previous_data": {
+        "id": 1000000170,
+        "name": "ddd445",
+        "description": "",
+        "account_id": 1000000053,
+        "visibility": "MINE",
+        "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+      }
+    },
+    "account_id": 1000000053
+  }
+  

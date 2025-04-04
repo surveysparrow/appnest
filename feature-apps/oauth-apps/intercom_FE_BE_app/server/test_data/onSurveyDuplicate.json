@@ -1,0 +1,51 @@
+{
+    "eventType": "onSurveyDuplicate",
+    "ruleEvent": "SURVEY_DUPLICATED",
+    "objectType": "SURVEY",
+    "objectId": 1001000187,
+    "data": {
+      "id": 1001000187,
+      "name": "classic - Clone - Clone - Clone",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [],
+      "archived": false,
+      "visibility": "Mine",
+      "survey_type": "ClassicForm",
+      "template_name": null,
+      "properties": {
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {},
+        "start_assessment": true,
+        "is_survey": true,
+        "clone": {
+          "id": 1001000185,
+          "parent_survey_type": "ClassicForm"
+        }
+      },
+      "published": true,
+      "eui_version": 2,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2024-02-27T13:47:53.018Z",
+      "updated_at": "2024-02-27T13:47:53.915Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000003,
+      "thankyou_template_id": null,
+      "theme_id": null
+    },
+    "account_id": 12
+  }

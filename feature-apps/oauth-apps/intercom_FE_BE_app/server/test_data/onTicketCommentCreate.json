@@ -1,0 +1,20 @@
+{
+    "eventType": "onTicketCommentCreate",
+    "ruleEvent": "TICKET_COMMENT_CREATED",
+    "objectType": "TICKET_COMMENT",
+    "objectId": 122,
+    "data": {
+        "body": "Will be resolved by a specific team of SurveySparrow",
+        "id": 122,
+        "ticket_id": 111,
+        "type": "INTERNAL_NOTE/REPLY",
+        "responder_type": "AGENT/REQUESTER",
+        "agent": {
+            "id": 333,
+            "name": "Eldridge",
+            "email": "eldridge777l@surveysparrow.com"
+        },
+        "created_at": "2023-12-20T10:53:18.507Z"
+    },
+    "account_id": 1000001115
+}

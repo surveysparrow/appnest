@@ -1,0 +1,48 @@
+{
+    "eventType": "onSurveyClose",
+    "ruleEvent": "SURVEY_CLOSED",
+    "objectType": "SURVEY",
+    "objectId": 1001000171,
+    "data": {
+      "id": 1001000171,
+      "name": "Offline",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [],
+      "archived": true,
+      "visibility": "Mine",
+      "survey_type": "OfflineApp",
+      "template_name": null,
+      "properties": {
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {
+          "builder_completed": true,
+          "design_completed": true
+        }
+      },
+      "published": true,
+      "eui_version": 1,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2023-07-14T19:52:08.851Z",
+      "updated_at": "2024-02-27T13:16:52.468Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000003,
+      "thankyou_template_id": null,
+      "theme_id": null
+    },
+    "account_id": 12
+  }

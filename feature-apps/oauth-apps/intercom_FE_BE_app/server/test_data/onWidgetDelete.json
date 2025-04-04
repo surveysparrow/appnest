@@ -1,0 +1,11 @@
+{
+    "eventType": "onWidgetDelete",
+    "ruleEvent": "WIDGET_DELETE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "id": 1000001459,
+      "account_id": 1000000053,
+      "dashboard_id": 1000000009
+    },
+    "account_id": 1000000053
+  }

@@ -1,0 +1,15 @@
+{
+    "eventType": "onDashboardCreate",
+    "ruleEvent": "DASHBOARD_CREATE",
+    "objectType": "DASHBOARD",
+    "data": {
+      "id": 1000000170,
+      "name": "ddd445",
+      "description": "",
+      "account_id": 1000000053,
+      "visibility": "MINE",
+      "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+    },
+    "account_id": 1000000053
+  }
+  

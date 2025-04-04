@@ -1,0 +1,180 @@
+{
+    "eventType": "onQuestionDelete",
+    "ruleEvent": "QUESTION_DELETED",
+    "objectType": "QUESTION",
+    "objectId": 1001000809,
+    "data": {
+      "id": 1001000809,
+      "txt": "",
+      "rtxt": {
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "hi",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ],
+        "entity_map": {}
+      },
+      "desc": null,
+      "rdesc": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "img": null,
+      "video": null,
+      "type": "EmailInput",
+      "position": "0.000000000000",
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "has_jump_logic": false,
+      "jump_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "properties": {
+        "data": {}
+      },
+      "has_score": false,
+      "required": false,
+      "randomized": false,
+      "multiple_answers": false,
+      "options_stacked": false,
+      "sub_question": false,
+      "disabled": false,
+      "multi_language_rtxt": null,
+      "multi_language_properties": null,
+      "multi_language_desc": null,
+      "multi_language_rdesc": null,
+      "piped_source_type": null,
+      "piped_source_id": null,
+      "created_at": "2024-02-21T10:46:57.849Z",
+      "updated_at": "2024-02-21T10:56:52.406Z",
+      "deleted_at": "2024-02-21T11:02:20.072Z",
+      "account_id": 12,
+      "parent_question_id": null,
+      "piped_qid": null,
+      "section": {
+        "id": 1001000514,
+        "name": "Untitled Section",
+        "desc": "",
+        "name_rtxt": null,
+        "desc_rtxt": null,
+        "has_display_logic": false,
+        "display_logic": {
+          "version": "1",
+          "logics": []
+        },
+        "img": null,
+        "video": null,
+        "abstract": true,
+        "position": "2.000000000000000",
+        "properties": {
+          "section_randomise": false,
+          "skip_section": false
+        },
+        "multi_language_name_rtxt": null,
+        "multi_language_desc_rtxt": null,
+        "multi_language_properties": null,
+        "created_at": "2024-02-21T10:46:52.531Z",
+        "updated_at": "2024-02-21T11:02:13.598Z",
+        "deleted_at": "2024-02-21T11:02:13.598Z",
+        "account_id": 12,
+        "survey_id": 1001000163
+      },
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-21T10:57:04.198Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }

@@ -1,0 +1,12 @@
+{
+    "client_id": "f340869e-54d1-4192-ac29-3bc7c59f6061",
+    "client_secret": "f3232285-db32-448c-af6b-425fe5068233",
+    "authorize_url": "https://app.intercom.io/oauth",
+    "token_url": "https://api.intercom.io/auth/eagle/token",
+    "options": {
+      "response_type": "code",
+      "access_type": "offline",
+      "prompt": "consent",
+      "scope": []
+    }
+  }  
