@@ -13,7 +13,7 @@ const auxillaryFunction = async (contacts, destinationConfig) => {
                 contacts,
                 {
                     headers: {
-                        Authorization: "Bearer pv_v653JC5brIGYBF2kihs8HZKR93Q8LM_HXzggVJp1DSShWu6rSoRrvtzV3yTlr_SU", // get from iparams
+                        Authorization: "Bearer ", // get from iparams //pv_v653JC5brIGYBF2kihs8HZKR93Q8LM_HXzggVJp1DSShWu6rSoRrvtzV3yTlr_SU
                         "Content-Type": "application/json",
                     }
                 }
@@ -47,7 +47,7 @@ const auxillaryFunction = async (contacts, destinationConfig) => {
             batch,
             {
                 headers: {
-                    Authorization: "Bearer pv_v653JC5brIGYBF2kihs8HZKR93Q8LM_HXzggVJp1DSShWu6rSoRrvtzV3yTlr_SU", // get from iparams
+                    Authorization: "Bearer ", // get from iparams //pv_v653JC5brIGYBF2kihs8HZKR93Q8LM_HXzggVJp1DSShWu6rSoRrvtzV3yTlr_SU
                     "Content-Type": "application/json",
                 }
             }

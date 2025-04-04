@@ -182,7 +182,7 @@ const getIntercomFields = async (args) => {
     try {
         const response = await $Fetch.get(args, {
             headers: {
-                "Authorization": "Bearer dG9rOjM4NmM4NDhhXzI4OTJfNDhiZF84NzQxXzkyYmI5MjExYjUzNDoxOjA="
+                "Authorization": "Bearer " // get from iparams
             }
         });
 
